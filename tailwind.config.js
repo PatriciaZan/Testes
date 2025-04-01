@@ -9,8 +9,9 @@ export default {
       fontFamily: {
         customFont: ['"K2D"', "sans-serif"],
       },
+
       colors: {
-        'font-main': '#1E1E1E'
+        'font-main': '#1E1E1E',
       }
     },
     
