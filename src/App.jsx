@@ -1,13 +1,15 @@
 
 import './App.css'
-import Calendar from './components/Calendar/Calendar'
+
+import MonthPlan from './components/MonthPlan/MonthPlan'
 
 function App() {
 
 
   return (
     <>
-      <Calendar />
+      <MonthPlan />
+
     </>
   )
 }
