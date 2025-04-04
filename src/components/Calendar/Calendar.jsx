@@ -2,7 +2,7 @@ import React from 'react'
 
 const Calendar = () => {
   return (
-    <div className='font-customFont'>
+    <div className='font-customFont cursor-pointer'>
 
       <div className='border'>
         <div className='border w-28'>

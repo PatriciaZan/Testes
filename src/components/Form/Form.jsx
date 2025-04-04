@@ -1,6 +1,13 @@
 
 
 const Form = () => {
+    
+    function addDay(formData){
+        const query = formData.get("query");
+        console.log(`${query}`);
+        
+    }
+
   return (
     <div className="
             border-2 border-red-500
@@ -13,8 +20,9 @@ const Form = () => {
             <p>Week 1</p>
         </div>
 
-        <div className="">
-            <form action="">
+        <form action={addDay}>
+            <div className="">
+            
                 <select name="type" id="type">
                     <option value="">Type</option>
                     <option value="interval">Interval</option>
@@ -30,23 +38,28 @@ const Form = () => {
                         <h4>Duration</h4>
                         <h4>Rest</h4>
                         
-                        <input type="number" placeholder="5" className="w-24"/>
+                        <input type="number" placeholder="5" className="w-24" />
                         <input type="number" placeholder="20s" className="w-24"/>
                         <input type="number" placeholder="120s" className="w-24"/>
                     </div>
                 </div>
+            </div>
 
-                
-            </form>
-        </div>
+            <div> 
+                <input type="number" placeholder="Goal Time" name="query"/>
+             </div>
 
-        <div>
-            <input type="number" placeholder="Goal Time"/>
-        </div>
+             <div>
+                <input type="number" placeholder="Distance"/>
+            </div>
 
-        <div>
-            <input type="number" placeholder="Distance"/>
-        </div>
+            <div>
+                <button id="formSubmit" className="bg-green-600 p-2 text-white font-bold rounded-md">Submit</button>
+            </div>
+        </form>
+        
+
+        
     </div>
   )
 }
