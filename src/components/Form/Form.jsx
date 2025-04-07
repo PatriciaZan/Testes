@@ -1,9 +1,12 @@
+import { useState } from "react";
 
 
 const Form = () => {
-    
+    const [data, setData] =useState(undefined);
+
     function addDay(formData){
         const query = formData.get("query");
+
         console.log(`${query}`);
         
     }
