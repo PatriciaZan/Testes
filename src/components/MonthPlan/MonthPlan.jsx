@@ -5,17 +5,8 @@ import Form from "../Form/Form"
 
 
 const monthPlan = () => {
-  const [day, setDay]= useState(undefined)
+  // const [day, setDay]= useState(undefined)
 
-  if(day === undefined) {
-    return (
-      <div className="flex flex-row p-8 gap-6">
-          <EmptyForm />
-          {/* <Form /> */}
-          <Calendar />
-      </div>
-    )
-  } else {
     return (
       <div className="flex flex-row p-8 gap-6">
         <Form />
@@ -23,6 +14,6 @@ const monthPlan = () => {
       </div>
     )
   }
-  }
+  
 
 export default monthPlan

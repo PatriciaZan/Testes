@@ -28,11 +28,11 @@ const Calendar = () => {
     }
   ]
 
-  const [day, setDay]= useState(undefined)
+  const [day, setDay]= useState(null)
 
   const showDay = (data) => {
     console.log(data.key);
-
+    setDay(day.key) 
   }
 
   return (
@@ -56,7 +56,9 @@ const Calendar = () => {
         <div className='grid grid-cols-7 gap-2'>
         {dataArray.map((data) => {
           return <>    
-          <div className='font-customFont cursor-pointer' key={data.key}>
+          <div 
+          className='font-customFont cursor-pointer' 
+          key={data.key} >
             <div className='border' onClick={ () => showDay(data)}>
               <div className='border w-28'>
 
